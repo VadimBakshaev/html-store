@@ -8,7 +8,16 @@
 }
 
 a {
+<<<<<<< HEAD
   display: block;
+=======
+    display: block;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+>>>>>>> ver0.1
 }
 
 .flex {
@@ -57,6 +66,10 @@ a {
   color: #F16D7F;
 }
 
+.menu-menu {
+    position: relative;
+}
+
 .menu-menu,
 .profile-menu {
   margin-right: 33px;
@@ -80,6 +93,7 @@ a {
   color: #F16D7F;
 }
 
+<<<<<<< HEAD
 .close-menu {
   float: right;
   margin: 15px 15px 0 0;
@@ -123,11 +137,73 @@ a {
 
 #main-menu:target {
   display: initial;
+=======
+.header-list {
+    list-style-type: none;
+}
+
+.main-menu {
+    background-color: #FFFFFF;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    position: absolute;
+    top: 75px;
+    display: none;
+}
+
+.menu-menu:hover .main-menu {
+    display: initial;
+}
+
+.close-menu {
+    float: right;
+    margin: 15px 15px 0 0;
+}
+
+.menu-head {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    margin: 32px 0 24px 32px;
+    width: 160px;
+}
+
+.menu-subhead {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #F16D7F;
+    margin: 0 0 12px 32px;
+}
+
+.list-menu-item {
+    list-style-type: none;
+}
+
+.menu-item {
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+    padding: 0 0 11px 45px;
+}
+
+.menu-item:hover {
+    color: #F16D7F;
+}
+
+#main-menu:target {
+    display: initial;
+>>>>>>> ver0.1
 }
 
 .main {
   background: #F1E4E6;
 }
+
 
 .main-picture {
   margin-left: -172px;
@@ -335,6 +411,124 @@ a {
   border: 1px solid #F16D7F;
 }
 
+.store-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 96px;
+}
+
+.card-items {
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 360px;
+    background: #F8F8F8;
+    position: relative;
+}
+
+.card:hover .card-pic {
+    filter: brightness(30%);
+}
+
+
+.add-basket {
+    display: flex;
+    align-items: center;
+    pointer-events: all;
+    padding: 13px;
+    border: 1px solid #FFFFFF;
+}
+
+.add-basket:hover {
+    border: 1px solid #F16D7F;
+    box-shadow: 0 0 10px 0 #F16D7F;
+}
+
+.add-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    margin-left: 11px;
+}
+
+.add-box {
+    display: none;
+    justify-content: center;
+    position: absolute;
+    pointer-events: none;
+    top: 190px;
+    width: 100%;
+}
+
+.card:hover .add-box {
+    display: flex;
+}
+
+.card-text {
+    text-align: left;
+    padding-left: 18px;
+}
+
+.description-head {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #000000;
+    margin: 25px 0 12px 0;
+}
+
+.description {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #5D5D5D;
+}
+
+.price {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F16D7F;
+    margin-top: 12px;
+    padding-bottom: 20px;
+}
+
+.store-box-header {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    color: #222222;
+}
+
+.store-box-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #9F9F9F;
+    margin-bottom: 46px;
+}
+
+.store-box-button {
+    width: 211px;
+    height: 47px;
+    text-align: center;
+    line-height: 47px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF;
+    background-color: #F16D7F;
+    margin: 48px 0 95px 0;
+}
+
+.store-box-button:hover{
+    background-color: #FFFFFF;
+    color: #F16D7F;
+    border: 1px solid #F16D7F;
+}
+
 .footer-first,
 .footer-third {
   background: #222224;
@@ -445,6 +639,7 @@ a {
 }
 
 .footer-social-item {
+<<<<<<< HEAD
   width: 32px;
   height: 32px;
   color: #000000;
@@ -452,6 +647,16 @@ a {
   text-align: center;
   line-height: 32px;
   margin-left: 7px;
+=======
+    width: 32px;
+    height: 32px;
+    background-color: #FFFFFF;
+    margin-left: 7px;
+}
+
+.facebook {
+    background-image: url(img/facebook.png);
+>>>>>>> ver0.1
 }
 
 .footer-social-item:hover {
@@ -459,6 +664,7 @@ a {
   color: #FFFFFF;
 }
 
+<<<<<<< HEAD
 .main-product {
   background: #F8F3F4;
   height: 148px;
@@ -722,3 +928,33 @@ a {
 .prev:hover, .next:hover, .page:hover {
   color: #F16D7F;
 }/*# sourceMappingURL=main.css.map */
+=======
+.instagram {
+    background-image: url(img/instagram.png);
+}
+
+.instagram:hover {
+    background-color: #F16D7F;
+    background-image: url(img/instagram-hover.png);
+}
+
+.pinterest {
+    background-image: url(img/pinterest.png);
+}
+
+.pinterest:hover {
+    background-color: #F16D7F;
+    background-image: url(img/pinterest-hover.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.twitter {
+    background-image: url(img/twitter.png);
+}
+
+.twitter:hover {
+    background-color: #F16D7F;
+    background-image: url(img/twitter-hover.png);
+}
+>>>>>>> ver0.1
