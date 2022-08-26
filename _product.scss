@@ -1,0 +1,151 @@
+.main-product {
+    background: #F8F3F4;
+    height: 148px;
+}
+
+.product-main {
+    padding-top: 59px;
+}
+
+.main-header-product {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: $main-color;
+}
+
+.breadcrumbs {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #636363;
+}
+
+.link1:hover,
+.link2:hover,
+.link3:hover {
+    color: $main-color;
+}
+
+.slash {
+    margin: 0 5px 0 5px;
+}
+
+.product-slider {
+    align-items: center;
+    background: #F7F7F7;
+    position: relative;
+    z-index: 0;
+}
+
+.product-item {
+    padding: 10px auto 41px auto;
+}
+
+.arrow {
+    width: 47px;
+    height: 47px;
+    font-size: 25px;
+    text-align: center;
+    line-height: 47px;
+    color: #000000;
+    background: rgba(42, 42, 42, 0.15);
+}
+
+.arrow:hover {
+    color: $main-color;
+}
+
+.product-desc-box {
+    height: 600px;
+    display: flex;
+    padding: 65px;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #EAEAEA;
+    position: relative;
+    z-index: 2;
+    margin-top: -50px;
+    background: #fff;
+}
+
+.product-chapter {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: $main-color;
+}
+
+.line1 {
+    width: 63px;
+    height: 3px;
+    margin: 12px;
+    background: #EF5B70;
+}
+
+.product-heading-desc {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    color: #4D4D4D;
+}
+
+.product-desc {
+    max-width: 555px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    margin: 48px 0 32px 0;
+    text-align: center;
+    color: #5E5E5E;
+}
+
+.product-cost {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #EF5B70;
+}
+
+.line2 {
+    border: 1px solid #EAEAEA;
+    width: 640px;
+    margin: 65px;
+}
+.choose{
+    background: #fff;
+    width: 130px;
+    height: 30px;
+    border: none;
+    color: #6F6E6E;
+    margin-left: 20px;
+  }
+
+  .choose:hover{
+    color: $main-color;
+  }
+
+
+.product-desc-button {
+    align-items: center;
+    margin-top: 48px;
+    padding: 14px 56px 8px 23px;
+    background: $main-color;
+    border: 1px solid transparent;
+}
+
+.product-desc-button:hover {
+    background: #FFFFFF;
+    text-decoration-color: $main-color;
+    border: 1px solid $main-color;
+}
+
+.product-desc-button:hover .add-text {
+    color: $main-color;
+}
+.product-card{
+    margin: 128px 0 128px 0;
+    justify-content: space-between;
+}
