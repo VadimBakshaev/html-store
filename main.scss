@@ -6,19 +6,28 @@
     text-decoration: none;
     transition: all 0.2s;
 }
+body{
+    height: 100%;
+}
 
 a {
     display: block;
 }
+
 $main-color: #F16D7F;
 
 .flex {
     display: flex;
     justify-content: space-between;
 }
-// .allcontent{
-//     height: 100vh;
-// }
+.allcontent{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+.content-box{
+    flex: 1;
+}
 
 .container {
     padding: 0 16px;
@@ -132,16 +141,23 @@ $main-color: #F16D7F;
 
 .main {
     background: #F1E4E6;
+    min-height: 360px;
 }
 
 
 .main-picture {
-    margin-left: -172px;
+    margin-left: -100px;
+    
+}
+.main-pic{
+    width: 100%;
+}
+.block-logo{
+    width: 70%;
 }
 
 .main-logo {
-    margin-top: 290px;
-    margin-right: 105px;
+    margin-top: 45%;
     border-left: 12px solid $main-color;
     padding-left: 16px;
 
@@ -153,7 +169,7 @@ $main-color: #F16D7F;
     text-transform: uppercase;
     font-weight: 900;
     font-size: 48px;
-    line-height: 57, 6px;
+    line-height: 57px;
     color: #222222;
 }
 
@@ -162,7 +178,7 @@ $main-color: #F16D7F;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 32px;
-    line-height: 38, 4px;
+    line-height: 37px;
     color: #222222;
 }
 
@@ -170,36 +186,50 @@ $main-color: #F16D7F;
     color: $main-color;
 }
 
-.place-container {
-    margin: 65px 0 30px 0;
+.place-box{
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-template-rows:repeat(2, auto);
+    grid-gap: 10px;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 .item-place1 {
     background-image: url(img/forwomen-back.jpg);
-    width: 360px;
-    height: 260px;
-    box-shadow: 0px 260px rgba(33, 22, 22, 0.7) inset;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 28%;
+    box-shadow: 0px 335px rgba(33, 22, 22, 0.7) inset;
 }
 
 .item-place2 {
     background-image: url(img/formen-back.jpg);
-    width: 360px;
-    height: 260px;
-    box-shadow: 0px 260px rgba(33, 22, 22, 0.7) inset;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 28%;
+    box-shadow: 0px 335px rgba(33, 22, 22, 0.7) inset;
 }
 
 .item-place3 {
     background-image: url(img/forkids-back.jpg);
-    width: 360px;
-    height: 260px;
-    box-shadow: 0px 260px rgba(33, 22, 22, 0.7) inset;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 28%;
+    box-shadow: 0px 335px rgba(33, 22, 22, 0.7) inset;
+}
+.item-place4-box{
+    grid-column: 1/4;
 }
 
 .item-place4 {
     background-image: url(img/accesories-back.jpg);
-    height: 180px;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 6%;
     box-shadow: 0px 180px rgba(33, 22, 22, 0.7) inset;
 }
+
 
 .item-place1:hover,
 .item-place2:hover,
@@ -229,7 +259,7 @@ $main-color: #F16D7F;
 }
 
 .place4 {
-    padding-top: 7%;
+    padding-top: 5%;
 }
 
 .store-box {
@@ -240,14 +270,19 @@ $main-color: #F16D7F;
 }
 
 .card-items {
-    flex-wrap: wrap;
+    display: grid;
+    grid-template: repeat(2, auto)/repeat(3,1fr);
+    grid-gap: 10px;
 }
 
 .card {
-    width: 360px;
+    width: 100%;
     background: #F8F8F8;
     position: relative;
-    margin-bottom: 20px;
+}
+
+.card-pic{
+    width: 100%;
 }
 
 .card:hover .card-pic {
@@ -281,7 +316,7 @@ $main-color: #F16D7F;
     justify-content: center;
     position: absolute;
     pointer-events: none;
-    top: 190px;
+    top: 30%;
     width: 100%;
 }
 
@@ -373,15 +408,20 @@ $main-color: #F16D7F;
 .footer-menu {
     align-items: center;
     flex-direction: column;
-    margin: 103px 0 104px 0;
-    width: 360px;
+    margin: 103px 10px 104px 10px;
+    width: 100%;
     height: 134px;
 }
 .footer-second {
     background-image: url(img/footer-back.jpg);
-    background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position-x: left;
+    background-position-y: bottom;
+}
+.footer-second-box{
+    align-items: center;
+    justify-content: space-around;
 }
 
 .footer-subscribe-person {
@@ -402,7 +442,7 @@ $main-color: #F16D7F;
 }
 
 .footer-form {
-    padding: 150px;
+    width: 356px;
 }
 
 .footer-subscribe {
@@ -426,7 +466,7 @@ $main-color: #F16D7F;
     border: 0px;
     border-radius: 30px 0 0 30px;
     outline: none;
-    padding-left: 20px;
+    padding-left: 30px;
     padding-right: 20px;
 }
 
@@ -477,8 +517,13 @@ $main-color: #F16D7F;
     background-color: $main-color;
     color: #FFFFFF;
 }
-
 @import 'product';
 @import 'catalog';
 @import 'cart';
 @import 'registration';
+@media (max-width: 768px) {
+    @import 'mob768';
+}
+@media (max-width: 525px){
+    @import 'mob365';
+}
