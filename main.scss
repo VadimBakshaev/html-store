@@ -6,9 +6,9 @@
     text-decoration: none;
     transition: all 0.2s;
 }
-body{
-    height: 100%;
-}
+// body{
+//     height: 100vh;
+// }
 
 a {
     display: block;
@@ -23,7 +23,7 @@ $main-color: #F16D7F;
 .allcontent{
     display: flex;
     flex-direction: column;
-    min-height: 100%;
+    min-height: 100vh;
 }
 .content-box{
     flex: 1;
@@ -105,8 +105,8 @@ $main-color: #F16D7F;
     font-size: 14px;
     line-height: 17px;
     color: #000000;
-    margin: 32px 0 24px 32px;
-    width: 160px;
+    margin: 32px 0 24px 25px;
+    width: 150px;
 }
 
 .menu-subhead {
@@ -115,7 +115,7 @@ $main-color: #F16D7F;
     font-size: 14px;
     line-height: 17px;
     color: $main-color;
-    margin: 0 0 12px 32px;
+    margin: 0 0 12px 27px;
 }
 
 .list-menu-item {
@@ -128,7 +128,7 @@ $main-color: #F16D7F;
     font-size: 14px;
     line-height: 17px;
     color: #6F6E6E;
-    padding: 0 0 11px 45px;
+    padding: 0 0 11px 35px;
 }
 
 .menu-item:hover {
