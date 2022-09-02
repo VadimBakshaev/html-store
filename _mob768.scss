@@ -1,0 +1,66 @@
+.logo-header {
+    font-size: 44px;
+    line-height: 52px;
+}
+
+.logo-text {
+    font-size: 24px;
+    line-height: 28px;
+}
+.card-items {
+    grid-template: repeat(3, auto)/repeat(2,1fr);
+}
+.footer-first-box{
+    flex-direction: column;
+    align-items: center;
+}
+.footer-menu{
+    margin: 80px 10px 70px 10px;
+    width: 100%;
+}
+.footer-second-box{
+    flex-direction: column;
+}
+.footer-subscribe{
+    margin-bottom: 10%;
+}
+.catalog{
+    grid-template: repeat(4, auto)/repeat(2, 1fr);
+}
+.product-card-box{
+    grid-template: auto/repeat(2, 1fr);
+}
+.last-card{
+    display: none;
+}
+.cart-content {
+    flex-direction: column;
+}
+.cart-left-box {
+    width: 100%;
+}
+.cart-right-box {
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.cart-cost-box {
+    margin-top: 35px;
+    margin-left: 10px;
+}
+.cart-price-button {
+    padding: 16px 18px;
+}
+.registr-article-head{
+    font-size: 16px;
+    line-height: 19px;
+}
+.registr-article-text{
+    font-size: 16px;
+    line-height: 19px;
+}
+.register-left-side{
+    width: 50%;
+}
+

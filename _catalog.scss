@@ -60,8 +60,19 @@
 .on-filter:hover .menu-filter{
     display: initial;
 }
+.choose-trending{
+    width: 120px;
+}
+.choose-size{
+    width: 50px;
+}
+.choose-price{
+    width: 55px;
+}
 .catalog{
-    flex-wrap: wrap;
+    display: grid;
+    grid-template: repeat(3, auto)/repeat(3, 1fr);
+    grid-gap: 10px;
 }
 
 .page-selector{
